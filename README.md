@@ -51,24 +51,6 @@ Project Files
 - It links the object files to create the executable a.out.
 - It recompiles files when their source files or listed dependencies change.
 
-Makefile Content
-
-makefile
-a.out : main1.o stack.o postfix.o check.o
-	gcc main1.o stack.o postfix.o check.o -o a.out
-
-main1.o : main1.c header.h
-	gcc -c main1.c
-
-stack.o : stack.c header.h
-	gcc -c stack.c
-
-postfix.o : postfix.c header.h
-	gcc -c postfix.c
-
-check.o : check.c header.h
-	gcc -c check.c
-
 Makefile commands explained:
 - gcc -c main1.c compiles main1.c and creates main1.o.
 - The other gcc -c commands compile their respective source files.
@@ -77,5 +59,3 @@ Makefile commands explained:
 
 
 
-## 8. Author
-- Sanjana Dasari
